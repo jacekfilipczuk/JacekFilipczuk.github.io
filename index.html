@@ -33,7 +33,7 @@
 								<header>
 									<h1>Jacek Filipczuk</h1>
 									<p>Lead Machine Learning Engineer</p>
-									<div><p>Working as a Lead Machine Learning Engineer at Fitmate. </p>
+									<div id="intro" class="h3"><p>Working as a Lead Machine Learning Engineer at Fitmate. </p>
 									<p>I am a leading machine learning engineer and data scientist with multiple
 										years of experience in startups. I enjoy the challenge
 										of developing and optimizing ML models with a focus on the NLP domain, while bridging
@@ -103,25 +103,29 @@
 									<h2>Contact Me</h2>
 								</header>
 								<div class="icons">
+									<p>Check out my socials here:</p>
 									<span></span><a href="https://twitter.com/FilipczukJacek" class="icon brands alt fa-twitter"><span class="label">Twitter</a></span>
 									<span><a href="https://www.linkedin.com/in/jacek-filipczuk-53626894/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</a></span>
 									<span><a href="https://github.com/jacekfilipczuk" class="icon brands alt fa-github"><span class="label">GitHub</span></a></span>
 									<span><a href="jacekfilipczuk89@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></span>
+									<p>You can also write me an email here:</p>
 								</div>
 								<form action="#" method="post">
 									<div>
+							<!--https://docs.google.com/forms/d/e/1FAIpQLScK8-pxYqRtIr9nFWh6cUPNoBpa7HiHi3jLgNnrYZi2euUYMA/viewform?usp=pp_url&entry.341771923=MYNAME&entry.1115766745=MYEMAIL&entry.988157537=MYSUBJECT&entry.482355089=MYMESSAGE -->
+
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
+												<input type="text" name="entry.341771923" placeholder="Name" />
 											</div>
 											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="jacekfilipczuk89@gmail.com" />
+												<input type="text" name="entry.1115766745" placeholder="email" />
 											</div>
 											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
+												<input type="text" name="entry.988157537" placeholder="Subject" />
 											</div>
 											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
+												<textarea name="entry.482355089" placeholder="Message" rows="6"></textarea>
 											</div>
 											<div class="col-12">
 												<input type="submit" value="Send Message" />
@@ -129,6 +133,15 @@
 										</div>
 									</div>
 								</form>
+								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+								<script src="assets/js/jquery.min.js"></script>
+								<script type="text/javascript">var submitted=false;</script>
+								<script type="text/javascript">
+								$('#gform').on('submit', function(e) {
+								  $('#gform *').fadeOut(2000);
+								  $('#gform').prepend('Your submission has been processed...');
+								  });
+								</script>
 							</article>
 
 					</div>
