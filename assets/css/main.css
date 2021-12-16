@@ -2189,3 +2189,8 @@ input, select, textarea {
 			}
 
 		}
+
+/* Custom tags */
+    #social_links {
+        text-align: center;
+    }
