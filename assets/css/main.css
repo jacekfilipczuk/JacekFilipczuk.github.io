@@ -2191,6 +2191,10 @@ input, select, textarea {
 		}
 
 /* Custom tags */
-    #social_links {
-        text-align: center;
+    #intro_text {
+        text-align: left;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+		margin-left: 0.5em;
+		position: left;
     }
