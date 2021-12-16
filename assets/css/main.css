@@ -2193,8 +2193,9 @@ input, select, textarea {
 /* Custom tags */
     #intro_text {
         text-align: left;
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        margin-right: 0.5em;
 		margin-left: 0.5em;
+		margin-bottom: 0.5em;
 		position: top;
+
     }
