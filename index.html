@@ -57,14 +57,19 @@
 									<h2>Work</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+									As a Lead Machine Learning Engineer I have strong experience in creating strategy plans for the development of AI capabilities,
+									aligning business objectives with AI solutions.
+									I have a Data Science and Computer Science background with a focus on NLP, Machine Learning, Deep Learning and Data Analysis.
+									My responsibilities span across all project phases: from R&D to creation of production-ready solutions.
+									I have excellent communication skills, and I'm experienced with reporting to C-level stakeholders.<br>
+
+									Below you can find a selection of my past projects.
 								</p>
 								<section>
 									<div class="row">
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+											<a href="#project_1" class="image fit"><img src="images/categorization.jpeg" alt=""></a>
+											Content Categorization
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
@@ -99,6 +104,34 @@
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
 										</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Project 1 -->
+							<article id="project_1" class="panel">
+								<div>
+									<a href="#work" class="jumplink pic">
+										<span class="arrow icon solid fa-chevron-left"><span>Back to my work</span></span>
+									</a>
+								</div>
+								<header>
+									<h2>Content Categorization</h2>
+								</header>
+								<section>
+
+									<div class="row">
+										<div><img src="images/categorization.jpeg" height="40%" width="60%" style="padding: 5px 50px 20px 0; float:left;">
+											The goal of this project was to automatically categorize questions asked by users of the platform
+											into a specific set of topics in order to improve the user's experience and allow a better filtering functionality.
+											The first step was to create a training dataset by labeling manually 5000 questions.
+											The questions were then preprocessed using a Deep Learning model called "BERT", that was first finetuned on the
+											training dataset. The outcome of the preprocessing step was to transform the questions into embeddings
+											(an embedding is a numerical representation of a text input).
+											The embeddings were used to train a classification Machine Learning model called SVM Classifier.
+											The final version of the classifier had 36 different classes and a F1 score (performance) of 80%.
+											The last step of the project was to create an API service to leverage the trained classifier in production.
+											The API service was built with docker and FastAPI, and hosted on GCP</div>
 									</div>
 								</section>
 							</article>
