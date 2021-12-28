@@ -67,42 +67,25 @@
 								</p>
 								<section>
 									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#project_1" class="image fit"><img src="images/categorization.jpeg" alt=""></a>
+										<div class="col-6 col-6-medium col-12-small">
+											<a href="#project_3" class="image fit"><img src="images/chatbot2 copy.jpeg" height="300px" alt=""></a>
+											Chatbot
+										</div>
+										<div class="col-6 col-6-medium col-12-small">
+											<a href="#project_1" class="image fit"><img src="images/categorization copy.jpeg" height="300px" alt=""></a>
 											Content Categorization
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+
+									</div>
+									<div class="row">
+
+										<div class="col-6 col-6-medium col-12-small">
+											<a href="#project_4" class="image fit"><img src="images/content_quality3 copy.jpeg" height="300px" alt=""></a>
+											Content Quality
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+										<div class="col-6 col-6-medium col-12-small">
+											<a href="#project_2" class="image fit"><img src="images/content_similarity copy.jpeg" height="300px" alt=""></a>
+											Content Similarity
 										</div>
 									</div>
 								</section>
@@ -121,7 +104,7 @@
 								<section>
 
 									<div class="row">
-										<div><img src="images/categorization.jpeg" height="40%" width="60%" style="padding: 5px 50px 20px 0; float:left;">
+										<div><img src="images/categorization copy.jpeg" height="50%" width="50%" style="padding: 5px 50px 20px 0; float:left;">
 											The goal of this project was to automatically categorize questions asked by users of the platform
 											into a specific set of topics in order to improve the user's experience and allow a better filtering functionality.
 											The first step was to create a training dataset by labeling manually 5000 questions.
@@ -132,6 +115,83 @@
 											The final version of the classifier had 36 different classes and a F1 score (performance) of 80%.
 											The last step of the project was to create an API service to leverage the trained classifier in production.
 											The API service was built with docker and FastAPI, and hosted on GCP</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Project 2 -->
+							<article id="project_2" class="panel">
+								<div>
+									<a href="#work" class="jumplink pic">
+										<span class="arrow icon solid fa-chevron-left"><span>Back to my work</span></span>
+									</a>
+								</div>
+								<header>
+									<h2>Content Similarity</h2>
+								</header>
+								<section>
+
+									<div class="row">
+										<div><img src="images/content_similarity copy.jpeg" height="50%" width="50%" style="padding: 5px 50px 20px 0; float:left;">
+											This project was developed for a platform where users could submit questions about specific job positions and wait for
+											answers coming directly from employees of the company offering those roles. There were two goals for this project: the first was to
+											automatically check if a new question (or a similar one) was already answered on the platform, in order to avoid duplicated content and
+											fulfill the user needs; the second goal was to improve the search functionality of the platform.
+											The solution was built using the FAISS library (used also by GCP services) to index all the content of the platform. This was achieved by creating embeddings of
+											all the content and using the cosine similarity function to calculate a similarity score between the input content and all the content in the index.
+											The created solution was then leveraged by creating an API service using Flask, Docker and GCP hosting service and integrated into the main product.
+										</div>
+									</div>
+								</section>
+							</article>
+
+
+						<!-- Project 3 -->
+							<article id="project_3" class="panel">
+								<div>
+									<a href="#work" class="jumplink pic">
+										<span class="arrow icon solid fa-chevron-left"><span>Back to my work</span></span>
+									</a>
+								</div>
+								<header>
+									<h2>Chatbot</h2>
+								</header>
+								<section>
+
+									<div class="row">
+										<div><img src="images/chatbot2 copy.jpeg" height="50%" width="50%" style="padding: 5px 50px 20px 0; float:left;">
+											This project was created for a platform in the HR domain, with the goal of automating candidate engagement and refresh candidate information
+											in the database of a recruiter. The use case of the first goal was to send the chatbot to a list of candidates and make them interact with it. The candidates were
+											able to ask questions regarding a specific job offer and the chatbot would, in return, collect some basic information about the candidates and notify the recruiter
+											about only the interested candidates. The use case of the second goal was to send the chatbot to a list of candidates and make the chatbot confirm that the candidates'
+											information was still up to date.
+											This project was created using mainly python, the open-source chatbot framework called Rasa and docker.
+										</div>
+									</div>
+								</section>
+							</article>
+
+
+						<!-- Project 4 -->
+							<article id="project_4" class="panel">
+								<div>
+									<a href="#work" class="jumplink pic">
+										<span class="arrow icon solid fa-chevron-left"><span>Back to my work</span></span>
+									</a>
+								</div>
+								<header>
+									<h2>Content Quality</h2>
+								</header>
+								<section>
+
+									<div class="row">
+										<div><img src="images/content_quality3 copy.jpeg" height="50%" width="50%" style="padding: 5px 50px 20px 0; float:left;">
+											This project was created for a platform where users could submit questions and wait for answers. The goal of the project was to identify high quality and engaging type
+											of content from low quality and not engaging content. This was achieved by creating a Deep Learning classifier that is able to categorize content into high
+											and low quality. This project involved a delicate R&D phase focused on identifying rules to define high and low quality content. Next those rules where applied
+											to create a training dataset that was used to train the classifier. The resulting MVP model achieved 85% f1 score and was made accessible through an API
+											service built with docker and FastAPI.
+										</div>
 									</div>
 								</section>
 							</article>
