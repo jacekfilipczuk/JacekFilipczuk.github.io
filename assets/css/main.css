@@ -2193,7 +2193,7 @@ input, select, textarea {
 /* Custom tags */
     #intro_text {
         text-align: left;
-        font-size: 18pt;
+        font-size: 1.5vw;
         padding-left: 2em;
         padding-right: 1em;
         padding-bottom: 4em;
